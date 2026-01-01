@@ -1,4 +1,4 @@
-# DRONE CLUB - BY LUIS A.
+# X-PILOTLAB - BY Pinkish-Warrior
 
 The code in this repo is based on the Tello.js source file distributed along with the Tello SDK.
 

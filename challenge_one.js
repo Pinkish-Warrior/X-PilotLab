@@ -9,8 +9,8 @@ const readline = require('readline'),
 rl = readline.createInterface(process.stdin, process.stdout), 
 // * It creates an interface using readline.createInterface() that reads input from process.stdin and writes output to process.stdout.
 
-prefix = 'LA-welcome_to_drone_club_&_robotics> '; 
-// * The variable prefix is set to the string value 'LA-welcome_to_drone_club_&_robotics> '.
+prefix = 'PW-welcome_to_X-PilotLab_&_robotics> '; 
+// * The variable prefix is set to the string value 'PW-welcome_to_X-PilotLab_&_robotics> '.
 
 
 var PORT = 8889; 
@@ -66,12 +66,15 @@ rl.on('line', (input) => {
                 client.send('takeoff', 0, 7, PORT, HOST, function (err, bytes) {
                   if (err) throw err;
                 });
-        
+                break;
+
               case 'f':
                   console.log('Command: forward 100');
                   client.send('forward 100', 0, 11, PORT, HOST, function (err, bytes) {
                     if (err) throw err;
-                  }); 
+                  });
+                  break;
+
     default: 
     console.log(`Command: ${commandStr}`); 
     client.send(commandStr, 0, commandStr.length, PORT, HOST, function(err, bytes) { if (err) throw err; }); 

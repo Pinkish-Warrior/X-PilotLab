@@ -2,7 +2,7 @@
   Based On  
 	Rzye Tello
 	http://www.ryzerobotics.com
-Luis Amaya Software Developer, written for educational purposes only.
+Pinkish-Warrior - Educational Drone Programming, written for educational purposes only.
 UK -london/ 2022
 */
 
@@ -91,7 +91,7 @@ async function doTelloCommandWithRetry (command) {
         console.log('Trying', command); } else {
         console.log('Re-Trying', command, i);
         }
-      var message = await doTelloCommand(new Buffer.from(command));
+      var message = await doTelloCommand(Buffer.from(command));
 
       break;
     } catch (err) {
