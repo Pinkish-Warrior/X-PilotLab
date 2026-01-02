@@ -15,7 +15,7 @@ const chalk = require("chalk");
 const { EOL } = require("os");
 
 // Read configuration file
-const config = require("./config.json");
+const config = require("../config.json");
 
 // Create UDP socket
 const client = dgram.createSocket("udp4");
@@ -41,7 +41,7 @@ const commands = new Map();
 commands.set("h", "help");
 commands.set("c", "command");
 commands.set("t", "takeoff");
-commands.set("l", "land");
+commands.set("e", "land");
 commands.set("f", "forward");
 commands.set("b", "back");
 commands.set("l", "left");
@@ -53,7 +53,7 @@ commands.set("s", "ccw");
 commands.set("w", "battery?");
 commands.set("z", "time?");
 commands.set("x", "speed?");
-commands.set("q", "flip");
+commands.set("q", "flip f");
 
 // Helper function to get random color
 function getRandomColor() {
@@ -141,8 +141,8 @@ rl.on("line", (input) => {
       commands.get(words[0]),
       0,
       commands.get(words[0]).length,
-      config.dronePort,
-      config.droneHost,
+      config.DRONE_PORT,
+      config.DRONE_HOST,
       (err) => {
         if (err) {
           console.log("❌ Error sending command:", err.message);
