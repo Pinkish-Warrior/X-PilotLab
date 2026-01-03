@@ -9,6 +9,7 @@ Welcome to the advanced tier! Charlie challenges push your skills with complex m
 ## Prerequisites
 
 Before attempting Charlie challenges, you must have:
+
 - ✅ Completed Challenge Alpha (basic commands)
 - ✅ Completed Challenge Beta (rotation and patterns)
 - ✅ Successfully executed box and vertical missions
@@ -31,10 +32,12 @@ Execute advanced flight choreography that combines vertical movement, full rotat
 ## Advanced Techniques
 
 **Full Rotations:**
+
 - `cw 360` - Complete clockwise spin
 - `ccw 360` - Complete counter-clockwise spin
 
 **Multi-Axis Combinations:**
+
 - Down → Full Spin → Up (bouncing motion)
 - Multiple bounce cycles in sequence
 - Maintaining altitude control during rotations
@@ -45,7 +48,9 @@ Missions with 8+ commands requiring precise timing and spatial awareness.
 ## Available Mission
 
 ### missions/xpilot-bounce.md
+
 Execute a complex bouncing pattern with full rotations:
+
 1. Takeoff
 2. Descend while maintaining control
 3. Execute 360° clockwise rotation
@@ -55,6 +60,7 @@ Execute a complex bouncing pattern with full rotations:
 7. Land safely
 
 **Skills practiced:**
+
 - Vertical motion control
 - Full 360° rotations
 - Oscillating patterns
@@ -80,22 +86,26 @@ Execute a complex bouncing pattern with full rotations:
 ## Testing Strategy
 
 ### Phase 1: Component Testing
+
 1. Test single 360° rotation on ground
 2. Test 360° rotation in hover
 3. Test down → spin → up sequence once
 
 ### Phase 2: Pattern Testing
+
 1. Execute 2 bounce cycles only
 2. Verify altitude consistency
 3. Check landing position accuracy
 
 ### Phase 3: Full Mission
+
 1. Pre-flight checks (battery > 70%, clear area)
 2. Execute complete xpilot-bounce.md
 3. Monitor and log any issues
 4. Refine timing if needed
 
 ### Phase 4: Optimization
+
 1. Adjust command delays for smoother transitions
 2. Optimize altitude changes
 3. Fine-tune rotation speeds
@@ -104,12 +114,14 @@ Execute a complex bouncing pattern with full rotations:
 ## Advanced Debugging
 
 **Common Issues:**
+
 - **Drift during rotation:** Wind compensation, recalibrate IMU
 - **Altitude loss:** Increase delay between commands
 - **Incomplete rotations:** Verify angle values, check for obstacles
 - **Battery drain:** Mission too long, reduce cycles or distances
 
 **Solutions:**
+
 - Add delay buffers between complex maneuvers
 - Log each command execution and drone response
 - Test in multiple locations to account for environmental factors
@@ -127,6 +139,7 @@ Execute a complex bouncing pattern with full rotations:
 ## Success Criteria
 
 You've mastered Charlie level when you can:
+
 - Execute xpilot-bounce.md autonomously with 100% success rate
 - Maintain altitude control throughout full rotations
 - Land within 50cm of takeoff position
@@ -136,6 +149,7 @@ You've mastered Charlie level when you can:
 ## Beyond Charlie: Custom Missions
 
 Ready to create your own? Try designing:
+
 - **Figure-8 pattern:** Combine forward movement with 180° turns
 - **Spiral ascent/descent:** Continuous rotation while changing altitude
 - **Perimeter patrol:** Rectangular path with altitude changes at corners
@@ -165,9 +179,10 @@ battery?
 
 Run with: `node ../../demos/xpilot-mission.js`
 
-## Congratulations!
+## Congratulations
 
 You've completed all three challenge levels and mastered autonomous drone programming. You can now:
+
 - Control drones programmatically with confidence
 - Design and execute complex flight patterns
 - Debug and optimize missions

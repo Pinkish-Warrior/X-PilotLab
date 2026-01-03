@@ -76,4 +76,3 @@ Once you've implemented the basic commands, try running:
 - Have a clear landing zone
 
 Good luck with your first challenge! Master these basics before moving to Beta level.
-

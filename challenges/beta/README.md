@@ -9,6 +9,7 @@ Ready to take your drone programming to the next level? Beta challenges introduc
 ## Prerequisites
 
 Before starting Beta challenges, you should have completed:
+
 - Challenge Alpha
 - Successfully implemented basic movement commands
 - Tested takeoff, land, and directional movements
@@ -28,11 +29,13 @@ Master rotational commands and execute coordinated flight patterns that combine 
 ## New Commands to Implement
 
 **Rotation Commands:**
+
 - `cw <angle>` - Rotate clockwise by specified degrees (e.g., `cw 90` for 90° right turn)
 - `ccw <angle>` - Rotate counter-clockwise by specified degrees (e.g., `ccw 90` for 90° left turn)
 
 **Command Combinations:**
 You'll need to chain commands together:
+
 1. Movement → Rotation → Movement
 2. Vertical → Rotation → Vertical (spiral patterns)
 3. Multiple rotations in sequence
@@ -40,7 +43,9 @@ You'll need to chain commands together:
 ## Available Missions
 
 ### missions/xpilot-box.md
+
 Fly the drone in a perfect square pattern:
+
 - Takeoff and ascend
 - Move forward, rotate 90°
 - Repeat 4 times to complete the square
@@ -49,7 +54,9 @@ Fly the drone in a perfect square pattern:
 **Skills practiced:** Precise rotation, pattern consistency, spatial awareness
 
 ### missions/xpilot-vertical.md
+
 Execute a vertical spiral pattern:
+
 - Ascend while rotating
 - Descend with counter-rotation
 - Combine vertical movement with orientation changes
@@ -65,6 +72,7 @@ node ../../demos/xpilot-mission.js
 ```
 
 When prompted, enter the mission filename:
+
 - `xpilot-box.md`
 - `xpilot-vertical.md`
 
@@ -118,6 +126,7 @@ When prompted, enter the mission filename:
 ## Success Criteria
 
 You've mastered Beta level when you can:
+
 - Execute both missions autonomously
 - Maintain consistent flight patterns
 - Handle rotation + movement combinations smoothly
